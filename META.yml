@@ -3,19 +3,17 @@ abstract: 'a fake HTTP server'
 author:
   - 'NAKAGAWA Masaki <masaki@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.59
+  ExtUtils::MakeMaker: 6.42
   LWP::UserAgent: 0
   Test::Exception: 0
   Test::Flatten: 0
-  Test::Memory::Cycle: 0
   Test::More: 0.98
   Test::TCP: 0
   Test::UseAllModules: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.59
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+generated_by: 'Module::Install version 1.01'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -34,8 +32,9 @@ requires:
   Scalar::Util: 1.14
   Test::TCP: 0
   Time::HiRes: 0
+  URI: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/masaki/Test-Fake-HTTPD.git
-version: 0.01
+version: 0.02
