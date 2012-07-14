@@ -13,16 +13,17 @@ requires 'Scalar::Util' => 1.14;
 requires 'Carp';
 requires 'Exporter';
 
+# SSL support
+recommends 'HTTP::Daemon::SSL';
+
 tests 't/*.t';
 test_requires 'Test::More' => 0.98;
 test_requires 'Test::UseAllModules';
-test_requires 'Test::Flatten';
 test_requires 'Test::Exception';
 test_requires 'Test::TCP';
 test_requires 'LWP::UserAgent';
 
 recursive_author_tests 'xt';
 auto_set_repository;
-readme_pod_from 'lib/Test/Fake/HTTPD.pm';
 
 WriteAll;

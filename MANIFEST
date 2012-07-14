@@ -1,3 +1,6 @@
+.proverc
+certs/server-cert.pem
+certs/server-key.pem
 Changes
 inc/Module/Install.pm
 inc/Module/Install/AuthorTests.pm
@@ -6,7 +9,6 @@ inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
-inc/Module/Install/ReadmePodFromPod.pm
 inc/Module/Install/Repository.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
@@ -16,7 +18,8 @@ MANIFEST			This list of files
 META.yml
 README.pod
 t/00_compile.t
-t/10_basic.t
+t/10_http.t
+t/11_https.t
 xt/01_pod.t
 xt/02_podcoverage.t
 xt/03_podspell.t
